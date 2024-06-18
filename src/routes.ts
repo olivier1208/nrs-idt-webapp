@@ -8,13 +8,6 @@ const routes = [
         path: '/',
         name: 'home',
         component: HomePage,
-        // children: [
-        //     {
-        //     //     path: 'schools',
-        //     //     name: 'admin.schools',
-        //     //     component: () => import('./views/components/Facilities/SchoolsList.vue'),
-        //     },
-        // ],
     },
     // 404 - Keep this at the bottom of the list
     {
