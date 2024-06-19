@@ -42,7 +42,7 @@ const onClick = () => {
       showCounties.value = !showCounties.value;
       emits('click', state);
       clicks.value = 0;
-    }, 700);
+    }, 300);
   } else {
     clearTimeout(timer);
     clicks.value = 0;

@@ -2,8 +2,8 @@
   <div v-if="loading" class="absolute inset-0 bg-white opacity-50 flex items-center justify-center">
     <div class="loader"></div>
   </div>
-  <div v-else>
-    <div class="text-center my-4 bg-emerald-500 text-white py-2 rounded-2xl w-1/2 mx-auto">
+  <div v-else class=" max-h-[50vh] overflow-y-auto border border-gray-400 rounded-2xl bg-gray-200 w-1/2  mx-auto py-6 my-3">
+    <div class="text-center my-4 bg-emerald-500 text-white py-2 rounded-2xl w-10/12 mx-auto">
       <h1>Comparison</h1>
       <h2><strong>Total County Population:</strong> {{ totalCountyPopulation }}</h2>
       <h2><strong>State Population: </strong>{{ statePopulation }}</h2>
@@ -19,7 +19,7 @@
       </h4>
     </div>
     <div v-for="county in counties" :key="county.name"
-         class="py-6 cursor-pointer hover:bg-pink-400 border-b border-gray-200 text-center bg-pink-300 w-1/2 mx-auto rounded-2xl my-3">
+         class="py-6 hover:bg-pink-400 border-b border-gray-200 text-center bg-pink-300 w-10/12 mx-auto rounded-2xl my-3">
       <h3>{{ county.name }}</h3>
       <p>Population: {{ county.population }}</p>
     </div>

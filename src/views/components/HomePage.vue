@@ -32,7 +32,7 @@ const filter = ref('');
 
 onMounted(async () => {
   try {
-    const { data } = await axios.get('http://localhost:8023/api/v1/states/stale');
+    const { data } = await axios.get(`${import.meta.env.VITE_BASE_API_URL}/api/v1/states/stale`);
     stateStore.states = data.data
     states.value = data.data;
   } catch (error) {
