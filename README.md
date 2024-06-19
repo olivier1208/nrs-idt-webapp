@@ -78,6 +78,8 @@ As I was running out of time, here's what I could have implemented over the scop
  - Using Vue Router to implement a more complex routing system
  - Implementing a more complex filtering system
  - CI/CD pipeline integration with auto deployment
+ - Adding commitizen to enforce a commit message convention
+ - Using SemVer to manage the versioning of the app
 
 ## BONUS 🤘
 
