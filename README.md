@@ -39,7 +39,7 @@ To get a local copy up and running follow these simple steps.
 
 ### Usage
 
-To start the development server, run:
+To start the development vite server (with HMR out of the box), run:
 
 ```sh
 npm run dev
@@ -69,10 +69,26 @@ Contributions are what make the open-source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Possible Improvements
+
+As I was running out of time, here's what I could have implemented over the scope :
+
+ - Using Pinia to manage the state instead of querying the API on every click
+ - Using LoadingOverlay to display a loading spinner when fetching data
+ - Using Vue Router to implement a more complex routing system
+ - Implementing a more complex filtering system
+ - CI/CD pipeline integration with auto deployment
+
+## BONUS 🤘
+
+The app is deployed to netlify at : [https://idt-nrs.netlify.app/](https://idt-nrs.netlify.app/)
+
+Each push on master will trigger a new deployment
+
+You just need to have a running backend at `http://localhost:6868` to make it work
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Contact
-
-Project Link: [https://github.com/olivier1208/nrs-idt-webapp](https://github.com/olivier1208/nrs-idt-webapp)
+Enjoy! 🚀

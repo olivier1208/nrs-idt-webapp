@@ -2,7 +2,6 @@ import { createApp, defineAsyncComponent } from 'vue'
 import { createPinia } from 'pinia';
 
 import { Router } from '@/routes';
-import vClickOutside from 'click-outside-vue3';
 
 import 'vue-loading-overlay/dist/css/index.css';
 
@@ -21,5 +20,5 @@ app.component(
 );
 
 Router.isReady().then(() => {
-    app.use(vClickOutside).mount('#app');
+    app.mount('#app');
 });
